@@ -7,11 +7,19 @@ text-transform: uppercase;
 text-align: center;
  }
  .month {
-     border: 1px solid deeppink;
+     border-style: dashed;
+     border-color: pink;
+     border-width: 3px;
  };
 
  .day {
      color: deeppink;
-     display: inline;
-     padding: 50px;
+     display: inline-block;
+     width: 97px;
+     height: 97px;
+     
+ }
+ .day:hover {
+     background-color: white;
+     cursor: pointer;
  }

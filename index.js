@@ -16,8 +16,20 @@ function displayDaysOfTheMonth() {
         //3) add the text/class (we customize it)
         dayNode.innerText = day
         dayNode.classList.add("day");
+        dayNode.addEventListener("click", selectDay);
+
+        monthNode.appendChild(dayNode);
     }
 
     //4) appent it to the parent
 
+}
+
+function selectDay(event) {
+    let clickedDayNode = event.target
+    let previouslySelectedDay = document.querySelector(".selected-day")
+    if (previouslySelectedDay)
+        previouslySelectedDay.classList.remove("selected-day")
+
+    clickedDayNode.classList.add("selected-day");
 }
