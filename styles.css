@@ -1,0 +1,17 @@
+body {
+    background-color: darkslategrey;
+};
+ .heading {
+color: crimson;
+text-transform: uppercase;
+text-align: center;
+ }
+ .month {
+     border: 1px solid deeppink;
+ };
+
+ .day {
+     color: deeppink;
+     display: inline;
+     padding: 50px;
+ }
