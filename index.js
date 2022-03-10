@@ -6,6 +6,20 @@ function onLoad() {
 }
 window.onload = onLoad()
 const daysCount = 31; //Assumption always display 31 days
+
+let firstDay = [
+    { day: 12, time: "12:00", title: "meeting" },
+    { day: 12, time: "16:00", title: "gym" },
+    { day: 12, time: "17:00", title: "dinner" },
+]
+
+let calendar = [
+    firstDay,
+    secondDay,
+]
+
+calendar[0]
+
 function displayDaysOfTheMonth() {
     //1) Get the div where we want to add the days as children: the parent
     let monthNode = document.getElementById("month");
